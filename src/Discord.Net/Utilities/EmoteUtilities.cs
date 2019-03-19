@@ -4,10 +4,22 @@ namespace Discord
 {
     public static class EmoteUtilities
     {
+        /// <summary>
+        ///     Generate the plaintext tag format for a guild emote
+        /// </summary>
+        /// <param name="id">The snowflake ID of the emote</param>
+        /// <param name="name">The display name of the emote</param>
+        /// <returns>The plaintext tag for a guild emote</returns>
         public static string FormatGuildEmote(ulong id, string name)
             => $"<:{name}:{id}>";
 
         // TODO: perf: bench whether this should be passed by ref (in)
+        /// <summary>
+        ///     Parse a plaintext emote tag
+        /// </summary>
+        /// <param name="formatted">A string containing the plaintext emote tag</param>
+        /// <param name="result">A tuple containing the parsed ID and display name</param>
+        /// <returns>True, if the emote could be parsed; false, if the format was incorrect.</returns>
         public static bool TryParseGuildEmote(ReadOnlySpan<char> formatted, out (ulong, string) result)
         {
             result = default;
