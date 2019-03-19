@@ -24,16 +24,17 @@ namespace Discord
         {
             result = default;
 
-            if (formatted.IndexOf('<') != 0 || formatted.IndexOf(':') != 1 || formatted.IndexOf('>') != formatted.Length - 1)
+            if (formatted.Length < 3)
+                return false;
+            if (formatted[0] != '<' || formatted[1] != ':' || formatted[formatted.Length-1] != '>')
                 return false;
 
             int closingIndex = formatted.LastIndexOf(':');
-            if (closingIndex < 0)
+            if (closingIndex < 2)
                 return false;
 
             ReadOnlySpan<char> name = formatted.Slice(2, closingIndex-2);
             ReadOnlySpan<char> idStr = formatted.Slice(closingIndex + 1, formatted.Length - (name.Length + 4));
-            idStr = idStr.Slice(0, idStr.Length - 1); // ignore closing >
 
             if (!ulong.TryParse(idStr.ToString(), out ulong id))
                 return false;
