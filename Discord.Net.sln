@@ -1,17 +1,21 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26124.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29021.104
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{424AA4CA-E283-4B83-B288-B0181516D1F9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{279F3738-D35E-402B-BC99-CBE44821C468}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Discord.Tests.Unit", "test\Discord.Tests.Unit\Discord.Tests.Unit.csproj", "{97B3208E-FBB3-43D8-8944-EE06F6FE4032}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Discord.Tests.Integration", "test\Discord.Tests.Integration\Discord.Tests.Integration.csproj", "{D2A17BA6-C6A5-42DB-A4BC-F97C07904BA2}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{279F3738-D35E-402B-BC99-CBE44821C468}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Discord.Net", "src\Discord.Net\Discord.Net.csproj", "{65F1C45D-6D82-4E24-9F56-2840D2E6EFB9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Discord.Net", "src\Discord.Net\Discord.Net.csproj", "{65F1C45D-6D82-4E24-9F56-2840D2E6EFB9}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "examples", "examples", "{942F56B3-26D5-428A-AE1A-37480D26B516}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample", "examples\0_Using_the_Client\Sample.csproj", "{E8E39B45-F718-443B-B6BD-2ED092047B57}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -59,6 +63,18 @@ Global
 		{65F1C45D-6D82-4E24-9F56-2840D2E6EFB9}.Release|x64.Build.0 = Release|Any CPU
 		{65F1C45D-6D82-4E24-9F56-2840D2E6EFB9}.Release|x86.ActiveCfg = Release|Any CPU
 		{65F1C45D-6D82-4E24-9F56-2840D2E6EFB9}.Release|x86.Build.0 = Release|Any CPU
+		{E8E39B45-F718-443B-B6BD-2ED092047B57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8E39B45-F718-443B-B6BD-2ED092047B57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8E39B45-F718-443B-B6BD-2ED092047B57}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{E8E39B45-F718-443B-B6BD-2ED092047B57}.Debug|x64.Build.0 = Debug|Any CPU
+		{E8E39B45-F718-443B-B6BD-2ED092047B57}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E8E39B45-F718-443B-B6BD-2ED092047B57}.Debug|x86.Build.0 = Debug|Any CPU
+		{E8E39B45-F718-443B-B6BD-2ED092047B57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8E39B45-F718-443B-B6BD-2ED092047B57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8E39B45-F718-443B-B6BD-2ED092047B57}.Release|x64.ActiveCfg = Release|Any CPU
+		{E8E39B45-F718-443B-B6BD-2ED092047B57}.Release|x64.Build.0 = Release|Any CPU
+		{E8E39B45-F718-443B-B6BD-2ED092047B57}.Release|x86.ActiveCfg = Release|Any CPU
+		{E8E39B45-F718-443B-B6BD-2ED092047B57}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -67,6 +83,7 @@ Global
 		{97B3208E-FBB3-43D8-8944-EE06F6FE4032} = {424AA4CA-E283-4B83-B288-B0181516D1F9}
 		{D2A17BA6-C6A5-42DB-A4BC-F97C07904BA2} = {424AA4CA-E283-4B83-B288-B0181516D1F9}
 		{65F1C45D-6D82-4E24-9F56-2840D2E6EFB9} = {279F3738-D35E-402B-BC99-CBE44821C468}
+		{E8E39B45-F718-443B-B6BD-2ED092047B57} = {942F56B3-26D5-428A-AE1A-37480D26B516}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1F07E0CE-26FE-4660-A0C3-4F9CC2BD7B72}

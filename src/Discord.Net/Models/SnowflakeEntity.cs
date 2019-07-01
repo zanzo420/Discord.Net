@@ -6,7 +6,7 @@ namespace Discord
     {
         private DateTimeOffset? _createdAt;
 
-        public SnowflakeEntity(IDiscordClient discord)
+        public SnowflakeEntity(DiscordClient discord)
         {
             Discord = discord;
         }

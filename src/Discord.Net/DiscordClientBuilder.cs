@@ -2,7 +2,8 @@ namespace Discord
 {
     public sealed class DiscordClientBuilder
     {
-        public IDiscordClient FromConfig(DiscordClientConfig config)
+        private DiscordClientBuilder() { }
+        public static IDiscordClient FromConfig(DiscordClientConfig config)
         {
             return new DiscordClient(config);
         }

@@ -1,13 +1,22 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
-    <LangVersion>7.3</LangVersion>
+    <TargetFramework>netcoreapp3.0</TargetFramework> <!-- TODO: netstandard3/.NET 5/whatever is mainstream when we release -->
+    <LangVersion>8.0</LangVersion>
+    <RootNamespace>Discord</RootNamespace>
+    <Nullable>Enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="System.Threading.Tasks.Extensions" Version="4.5.2" />
     <PackageReference Include="Wumpus.Net.Gateway" Version="0.2.2-build-00031" />
     <PackageReference Include="Wumpus.Net.Rest" Version="0.2.2-build-00031" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\Emotes\" />
+    <Folder Include="Models\Guilds\" />
+    <Folder Include="Models\Roles\" />
   </ItemGroup>
 
 </Project>
